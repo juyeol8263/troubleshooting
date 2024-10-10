@@ -17,7 +17,7 @@ spec:
       - key: taint-test
         operator: Equal
         value: value
-        effect: NoSchedule
+        effect: Schedule
       containers:
         - name: "troubleshooting-app"
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
