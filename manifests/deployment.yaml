@@ -1,17 +1,17 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "troubleshooting-app"
+  name: "82209856"
   namespace: troubleshooting
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "troubleshooting-app"
+      app: "82209856"
   template:
     metadata:
       labels:
-        app: "troubleshooting-app"
+        app: "82209856"
     spec:
       tolerations:
       - key: taint-test
@@ -19,7 +19,7 @@ spec:
         value: value
         effect: NoSchedule
       containers:
-        - name: "troubleshooting-app"
+        - name: "82209856"
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
           resources:
             limits:
